@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - code_for_design</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="~/css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="~/css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="~/images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="~/css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+      <style>
+          .nav-link:hover{
+              background:#2b2278 !important;
+              color:white !important;
+          }
+      </style>
+</head>
+<body>
+     <!-- header section start -->
+   <div class="header_section p-0">
+      <div class="header_main p-0">
+         <div class="">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class=""><a asp-area="" asp-controller="Home" asp-action="Index" class="p-0"><h1 class="text-white p-0">Codé <span>For</span> Design</h1></a></div>
+               <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
+                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+        
+      </div>
+   </div>
+   <!-- header section end -->
+    <div>
+            
+            @RenderBody()
+    </div>
+
+    <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="input_btn_main">
+            <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
+            <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+         </div>
+         <div class="location_main">
+            <div class="call_text"><img src="~/images/call-icon.png"></div>
+            <div class="call_text"><a href="#">Call +92 343 7078361</a></div>
+            <div class="call_text"><img src="~/images/mail-icon.png"></div>
+            <div class="call_text"><a href="#">shahzadahmad.developer@gmail.com</a></div>
+         </div>
+         <div class="social_icon">
+            <ul>
+               <li><a href="#"><img src="~/images/fb-icon.png"></a></li>
+               <li><a href="#"><img src="~/images/twitter-icon.png"></a></li>
+               <li><a href="#"><img src="~/images/linkedin-icon.png"></a></li>
+               <li><a href="#"><img src="~/images/instagram-icon.png"></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">2020 All Rights Reserved. Design by <a href="">Gresys Hub</a> Shahzad Ahmad <a href="https://themewagon.com">ThemeWagon</a></p>
+      </div>
+   </div>
+    <!-- javascript -->
+   <script src="~/js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <!-- copyright section end -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
